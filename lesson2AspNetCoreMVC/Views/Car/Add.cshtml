@@ -1,0 +1,46 @@
+﻿@model lesson2AspNetCoreMVC.Models.CarViewModel
+@{
+    ViewData["Title"] = "Add Car";
+}
+<h4 class="text-info">Add</h4>
+<form method="post" action="~/Car/Add">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="Company">Company</label><br />
+                <input asp-for="Company"  type="text"  class="form-control" placeholder="Enter company name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="Model">Model</label><br />
+                <input asp-for="Model" type="text" class="form-control" placeholder="Enter model name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="ManufactureYear">Manufacture Year</label><br />
+                <input asp-for="ManufactureYear" type="number" class="form-control" placeholder="Enter manufacture year name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <label for="AdditionalInformation">Additional Information</label><br />
+                <input asp-for="AdditionalInformation" type="text" class="form-control" placeholder="Enter additional information name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="submit" class="btn btn-primary" value="Save" />
+            </div>
+        </div>
+    </div>
+</form>
